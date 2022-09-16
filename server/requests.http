@@ -1,0 +1,39 @@
+###
+GET http://localhost:3333/games
+
+###
+GET http://localhost:3333/games/df9be407-e22a-4672-a577-09b0ef0e25ef/ads
+
+###
+GET http://localhost:3333/ads/2405a4d6-2778-4866-92e0-8129098e7e13/discord
+
+###
+POST http://localhost:3333/games/559c058f-9422-449e-ae64-d20eba6adc06/ads
+Content-Type: application/json
+
+{
+  "name": "tyron",
+  "discord": "tyron#5584",
+  "weeksDays": [0,6],
+  "useVoiceChannel": false,
+  "yearsPlaying": 1,
+  "hourStart": "18:00",
+  "hourEnd": "20:00"
+}
+
+###
+GET http://10.0.0.158:3333/games/df9be407-e22a-4672-a577-09b0ef0e25ef/ads
+
+###
+POST http://localhost:3333/games/559c058f-9422-449e-ae64-d20eba6adc06/ads
+Content-Type: application/json
+
+{
+  "name": "Flávio Menezes dos Reis",
+  "discord": "flaviomreis#9815",
+  "weeksDays": [0,6],
+  "useVoiceChannel": true,
+  "yearsPlaying": 0,
+  "hourStart": "20:00",
+  "hourEnd": "24:00"
+}
